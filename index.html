@@ -6,87 +6,729 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/new_main.css">
     <title>Search conditions</title>
 </head>
 
 <body>
+    <div class="header">
+        <div class="menu"></div>
+    </div>
+
     <div class="wrap">
-        <div class="section_box flex">
+        <div class="main_con">
+            <div class="st_tit">
+                <div class="stt_tit">Booking Master <span>ADM_M1006</span></div>
+                <div class="stt_stiit">
+                    <div class="stt_txt">Customer Service &nbsp;>&nbsp; Booking &nbsp;> <span>Booking Master <img src="/img/copy.png"></span></div>
 
-            <div class="search_wrap" >
-                <label class="form-label">BKG No.</label>
-                <div class="search">
-                    <div class="search_inner">
-                        <input type="text" value="ALPUS2200112">
+                    <div class="l_line">|</div>
+
+                    <div class="link_box">
+                        <div><img src="/img/h_img1.png"></div>
+                        <div><img src="/img/h_img2.png"></div>
+                    </div>
+
+                    <div class="l_line">|</div>
+
+                    <div class="link_box">
+                        <div><img src="/img/h_img3.png"></div>
+                        <div><img src="/img/h_img4.png"></div>
+                        <div><img src="/img/h_img5.png"></div>
                     </div>
                 </div>
             </div>
 
-            <div class="search_wrap">
-                <label class="form-label">B/L No.</label>
-                <div class="search">
-                    <div class="search_inner">
-                        <input type="text" value="ALPUS2200112">
+            <div class="section_box flex">
+
+                <div class="search_wrap" >
+                    <label class="form-label">BKG No.</label>
+                    <div class="search">
+                        <div class="search_inner">
+                            <input type="text" value="ALPUS2200112">
+                        </div>
                     </div>
                 </div>
+
+                <div class="search_wrap">
+                    <label class="form-label">B/L No.</label>
+                    <div class="search">
+                        <div class="search_inner"> 
+                            <input type="text" value="ALPUS2200112">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search_wrap">
+                    <label class="form-label">P/O No.</label>
+                    <div class="search">
+                        <div class="search_inner">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="search_btn">
+                    <button class="breset"><img src="/img/Boxicons.png"></button>
+                    <button class="bsearch">seach</button>
+                </div>
+
             </div>
 
-            <div class="search_wrap">
-                <label class="form-label">P/O No.</label>
-                <div class="search">
-                    <div class="search_inner">
-                        <input type="text">
+            <div class="section_box top0">
+                <div class="sb_title">
+                    <div class="sb_l">
+                        <div>Booking Office : <span>SELHO</span></div>
+                        <div class="l_line">|</div>
+                        <div>Staff : <span>OPUSADM</span></div>
+                        <div>
+                            <input type="checkbox" id="toggle" hidden class="toggle">
+                            <label for="toggle" class="toggleSwitch">
+                                <span class="toggleButton"></span>
+                            </label>
+                            <span class="sbt_b">Pre-Assigned BKG No.</span>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="toggle2" hidden class="toggle">
+                            <label for="toggle2" class="toggleSwitch">
+                                <span class="toggleButton"></span>
+                            </label>
+                            <span class="sbt_b">S/I</span>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="toggle3" hidden class="toggle">
+                            <label for="toggle3" class="toggleSwitch">
+                                <span class="toggleButton"></span>
+                            </label>
+                            <span class="sbt_b">Auto EDI Hold</span>
+                        </div>
+                    </div>
+
+                    <div class="sb_r">
+                        <div>Split : <span>No</span></div>
+                        <div class="l_line">|</div>
+                        <div>DPC : <span>Yes</span></div>
+                        <div class="l_line">|</div>
+                        <div>Status : <span><img src="/img/Mask_group.png"></span></div>
+                        <div class="sbr_box">SP <img src="/img/Close.png"></div>
+                        <div class="sbr_box">SP <img src="/img/Close.png"></div>
                     </div>
                 </div>
-            </div>
+
+                <div class="sbox_wrap" style="display: none;"">
+                    <div class="sbox_tit">
+                        <div class="st_tit ip_check">Route Info.</div>
+                        <div class="st_btn">
+                            <button>Constraint</button>
+                            <button>View Milestone</button>
+                            <button>Route Detail</button >
+                        </div>
+                    </div>
+                    
+                    <div class="sbox_cox_fg1">
+                        
+                        <div>
+                            <table class="nomal_table">
+                                <colgroup>
+                                        <col width="100px"/>
+                                </colgroup>
+            
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            POR
+                                        </th>
+                                        <td class="search_icon">
+                                            <input type="text" value="KRPUS">
+                                        </td>
+                                        <td class="search_icon">
+                                            <input type="text" value="KRPUSHN">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th >
+                                            POL
+                                        </th>
+                                        <td class="search_icon">
+                                            <input type="text" value="KRPUS">
+                                        </td>
+                                        <td class="search_icon">
+                                            <input type="text" value="KRPUSHN">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th >
+                                            POD
+                                        </th>
+                                        <td class="search_icon">
+                                            <input type="text" value="KRPUS">
+                                        </td>
+                                        <td class="search_icon">
+                                            <input type="text" value="KRPUSHN">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th >
+                                            DEL
+                                        </th>
+                                        <td class="search_icon">
+                                            <input type="text" value="KRPUS">
+                                        </td>
+                                        <td class="search_icon">
+                                            <input type="text" value="KRPUSHN">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <table class="nomal_table">
+                                <colgroup>
+                                    <col width="100px" />
+                                </colgroup>
+                            
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Trunk Vessel
+                                        </th>
+                                        <td class="essential search_icon">
+                                            <input type="text" value="KRPUS"">
+                                        </td>
+                                        <td class="w65">
+                                            <input type="text" value="EUROPE">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th >
+                                            Sail Date
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" value="2022-11-09" class="essential">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th >
+                                            R/D Term
+                                        </th>
+                                        <td  colspan="2">
+                                            <select>
+                                                <option>CY-CY</option>
+                                                <option>CY-CY 2</option>
+                                                <option>CY-CY 3</option>
+                                                <option>CY-CY 4</option>
+                                            <select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th >
+                                            Delivery
+                                        </th>
+                                        <td  colspan="2">
+                                            <input type="text" value="" placeholder="YYYY-MM-DD">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <table class="nomal_table">
+                                <colgroup>
+                                    <col width="100px" />
+                                </colgroup>
+                        
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            CNSHAHJ
+                                        </th>
+                                        <td >
+                                            <input type="text" value="KRPUS" class="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            MTY Pick-up Date
+                                        </th>
+                                        <td>
+                                            <input type="text" value="2022-11-09" class="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            MTY Door Arrival
+                                        </th>
+                                        <td>
+                                            <input type="text" value="" class="" placeholder="YYYY-MM-DD">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Full Return CY
+                                        </th>
+                                        <td>
+                                            <input type="text" value="CNSHAGQ" >
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <table class="nomal_table">
+                                <colgroup>
+                                    <col width="100px" />
+                                </colgroup>
+                            
+                                <tbody>
+                                    
+                                    <tr>
+                                        <th>
+                                            MTY Door Arrival
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="placeholder">
+                                        </td>
+                                    </tr>
+
+                                    <tr >
+                                        <th>
+                                            MTY Pick-up Date
+                                        </th>
+                                        <td>
+                                            <input type="text" value="-3 TEU (BKG: 3/ Alloc: 0)" >
+                                        </td>
+                                        <td class="w65 nb">
+                                            <button>Alloc</button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            MTY Door Arrival
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="Placeholder">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            Full Return CY
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="Placeholder">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!---->
+                <div class="sbox_wrap"  style="display: none;">
+                    <div class="sbox_tit">
+                        <div class="st_tit ip_check">Contract Info..</div>
+                        
+                    </div>
+                
+                    <div class="sbox_cox_fg1">
+
+                        <div>
+                            <div>
+                                <table class="nomal_table">
+                                    <colgroup>
+                                        <col width="100px" />
+                                    </colgroup>
+                            
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                POR
+                                            </th>
+                                            <td>
+                                                <input type="text" value="KRPUS">
+                                            </td>
+                                            <td>
+                                                <input type="text">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                POL
+                                            </th>
+                                            <td>
+                                                <input type="text" value="KRPUS">
+                                            </td>
+                                            <td>
+                                                <input type="text">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                POD
+                                            </th>
+                                            <td>
+                                                <input type="text" value="KRPUS">
+                                            </td>
+                                            <td>
+                                                <input type="text">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                DEL
+                                            </th>
+                                            <td>
+                                                <input type="text" value="KRPUS">
+                                            </td>
+                                            <td>
+                                                <input type="text">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div>
+                                <table class="nomal_table">
+                                    <colgroup>
+                                        <col width="100px" />
+                                    </colgroup>
+                            
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                POR
+                                            </th>
+                                            <td>
+                                                <input type="text" value="KRPUS">
+                                            </td>
+                                            <td>
+                                                <input type="text">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                POL
+                                            </th>
+                                            <td>
+                                                <input type="text" value="KRPUS">
+                                            </td>
+                                            <td>
+                                                <input type="text">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                POD
+                                            </th>
+                                            <td>
+                                                <input type="text" value="KRPUS">
+                                            </td>
+                                            <td>
+                                                <input type="text">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                DEL
+                                            </th>
+                                            <td>
+                                                <input type="text" value="KRPUS">
+                                            </td>
+                                            <td>
+                                                <input type="text">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!---->
+                <div class="sbox_wrap">
+                
+                    <div class="sbox_cox_fg1">
+                        <div>
+                            <div class="sbox_tit">
+                                <div class="st_tit ip_check">Contract Info..</div>
+                                <div class="st_btn">
+                                    <button>Rate Qty Detail</button>
+                                </div>
+                            </div>
         
+                            <div>
+                                <div>
+                                    <label>
+                                        <input type="checkbox">
+                                        Flex Height
+                                    </label>
+                                     
+                                    <label>
+                                        <input type="checkbox">
+                                        LCL
+                                    </label>
 
-            <div class="search_btn">
-                <div></div>
-                <div></div>
-            </div>
+                                    <label>
+                                        <input type="checkbox">
+                                        LCL
+                                    </label>
 
-        </div>
+                                    <select>
+                                        <option></option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    Est. Total Cargo Weight
+                                    <div>
+                                        <input value="14,784.220">
+                                    </div>
+                                    <select>
+                                        <option></option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sbox_tit">
+                                <div class="st_tit ip_check">Additional Information</div>
+                                 <div class="st_btn">
+                                    <button>Send Email/Fax/EDI</button>
+                                    <button>Copy Booking</button>
+                                    <button>Booking Split</button >
+                                </div>
+                            </div>
+                            <div>
+                                <style>
+                                    .add_info{overflow: hidden;}
+                                    .add_info .al_tit{display: flex; height: 38px; line-height: 38px; gap:10px;}
+                                    .add_info .al_tit>div:first-child{flex-basis: 15px;flex-shrink: 1; text-align: center;}
+                                    .add_info .al_tit .al_name{border-bottom: 1px dashed #C3CBD9; flex-grow: 1; font-weight: 600;color: #24313D; font-size: 14px;}
+                                    .add_info .al_tit .al_name.on{color: #325BDA;}
+                                </style>
+                                <div class="add_info">
+                                    <div class="al_tit">
+                                        <div><img src="/img/pius.png"></div>
+                                        <div class="al_name on">Special Cargo</div>
+                                    </div>
+                                    <div class="al_con">
+123
+                                    </div>
+                                </div>
 
+                                <div class="add_info">
+                                    <div class="al_tit">
+                                        <div><img src="/img/pius.png"></div>
+                                        <div class="al_name">Special Instruction</div>
+                                    </div>
+                                    <div class="al_con">
+123
+                                    </div>
+                                </div>
 
-        <div class="section_box">
-            <div>
-                Booking Office
-            </div>
+                                <div class="add_info">
+                                    <div class="al_tit">
+                                        <div><img src="/img/pius.png"></div>
+                                        <div class="al_name">Service Information</div>
+                                    </div>
+                                    <div class="al_con">
+                                        123
+                                    </div>
+                                </div>
 
-            <div class="sbox_wrap">
-                <div class="sbox_tit">
-                    <div class="st_tit ip_check">Route Info.</div>
-                    <div class="st_btn">
-                        <button>Constraint</button>
-                        <button>View Milestone</button>
-                        <button>Route Detail</button >
+                                <div class="add_info">
+                                    <div class="al_tit">
+                                        <div><img src="/img/pius.png"></div>
+                                        <div class="al_name">Remark</div>
+                                    </div>
+                                    <div class="al_con">
+                                        123
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="sbox_cox_1-2">
-                    <div>1</div>
-                    <div>2</div>
-                </div>
             </div>
 
-            <div class="sbox_wrap">
-                <div class="sbox_tit">
-                    <div>1</div>
-                    <div>2</div>
-                </div>
-            
-                <div class="sbox_cox_1-2">
-                    <div>1</div>
-                    <div>2</div>
-                </div>
-            </div>
-
-            
+            <div style="height:1px"></div>
         </div>
+
+
+
+
+        <!--써머리 부분-->
+        <div class="summary">
+            <div class="summary_position">
+                <div>
+                    <div class="sm_tit">BKG Summary  <img src="/img/arr.png"></div>
+                    <div class="sm_list">
+                        <div class="route_txt">
+
+                            <div class="rt_box">
+                                <div class="rt_tit ud">Route >></div>
+                                <div class="rt_con">
+                                    <div class="rtc_route">
+                                        <div class="rtcr_p1">POR<span>KRPUS</span></div>
+                                        <div class="line">|</div>
+                                        <div class="rtcr_p1 r">POL<span>KRPUS</span></div>
+                                    </div>
+
+                                    <div class="rtc_txt">
+                                        <div><img src="/img/ld.png"></div>
+                                        <div><img class="ship" src="/img/ship.svg">HJEU1004W</div>
+                                    <div><img src="/img/ld.png"></div>
+                                    </div>
+
+                                    <div class="rtc_route">
+                                        <div class="rtcr_p1">POR<span>KRPUS</span></div>
+                                        <div class="line">|</div>
+                                        <div class="rtcr_p1 r">POL<span>KRPUS</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="rt_tit">Service Term</div>
+                                <div class="rt_con">CY / CY</div>
+                            </div>
+
+                            <div class="rt_box">
+                                <div class="rt_tit">Cargo Type</div>
+                                <div class="rt_con">Full</div>
+
+                                <div class="rt_tit">Special Cargo</div>
+                                <div class="rt_con">DG, RF</div>
+
+                                <div class="rt_tit">Commodity</div>
+                                <div class="rt_con">FAK OR CARGO, NOS</div>
+                            </div>
+
+                            <div class="rt_box">
+                                <div class="rt_tit">BKG Process</div>
+                                <div class="rt_con"></div>
+
+                                <div class="rt_tit ud">B/L Quantity >></div>
+
+                                <div class="rt_tit">DPC Status</div>
+                                <div class="rt_con">Yes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="on">
+                    <div class="sm_tit">Related Work <img src="/img/arr.png"></div>
+                    <div class="sm_list">
+                        <div class="route_wrap">
+                        
+                            <ul class="route_list">
+                                <!-- 시간흐름 역순 -->
+                        
+                                <li>
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>Master</p>
+                                    </div>
+                                </li>
+                        
+                                <li class="on">
+                                    <!-- 활성화 class추가 : on -->
+                                    <!-- 구분점 class : red / orange / blue -->
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>Door Move</p>
+                                    </div>
+                        
+                                </li>
+                        
+                                <li class="on">
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>Container</p>
+                                    </div>
+                                </li>
+                    
+                                <li class="">
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>Shipping Parties</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="now">
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>Mark & Goods</p>
+                                    </div>
+                                </li>
+
+                                <li class="">
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>C/M</p>
+                                    </div>
+                                </li>
+
+                                <li class="">
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>Freight</p>
+                                    </div>
+                                </li>
+
+                                <li class="">
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>B/L Issue</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <div class="footer"></div>
+
+    <script>
+        $(".summary_position>div.on .sm_list").slideDown();
+        $('.summary_position>div').click(function () {
+            if ($(this).hasClass("on")) {
+                    $(this).removeClass("on");
+                $(this).find(".sm_list").slideUp();
+            } else {
+                    $(this).addClass("on");
+                    $(this).find(".sm_list").slideDown();
+            };
+        });
+    </script>
 </body>
 
 </html>
