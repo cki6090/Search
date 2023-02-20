@@ -2,13 +2,13 @@ html{background: #F0F2F5; width: 100%; height: 100%;}
 body{display: flex; flex-direction: column;}
 .menu{position:fixed; top: 0px; left: 0px; width: 55px; height: 100vh; background: #FFFFFF; box-shadow: 0px 1px 4px -1px rgba(28, 48, 74, 0.5);}
 .header{width: 100%; height: 55px; background-color: #242A33; flex-shrink: 0;}
-.footer{width: 100%; height: 55px; border-top:1px solid #A0ACBF; flex-shrink: 0;}
+.footer{width: 100%; height: 55px; border-top:1px solid #A0ACBF; flex-shrink: 0; background: #FFFFFF;}
 .wrap{padding: 20px 20px 20px 75px; flex: auto; overflow: auto; display:flex; gap: 20px; min-width: 1440px; position: relative;}
 .wrap .main_con{flex-grow: 1;}
 .l_line{color: #DBE0E9 !important;}
 
 .summary{width: 160px;flex-shrink: 0;}/*summary_position width 보다 40px작게*/
-.summary_position{position: fixed; top: 55px; right: 0px; width: 180px; height: 100vh; background: #FFFFFF;border-left: 1px solid #C3CBD9; overflow: auto;}
+.summary_position{position: fixed; top: 55px; right: 0px; width: 180px;height: calc(100% - 55px); background: #FFFFFF;border-left: 1px solid #C3CBD9; overflow: auto;}
 .summary_position .sm_tit{border-bottom: 1px solid #EAEFF5; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);height: 36px; width: 100%; background-color: #ffffff; line-height: 36px; padding: 0px 10px; font-weight: 700; font-size: 13px;color: #325BDA; position: relative;}
 .summary_position>div .sm_tit img{position: absolute; top: 15px; right: 12px; transition: all 1s;}
 .summary_position>div.on .sm_tit img{transform: rotate(-180deg); transition: all 1s;}
@@ -38,6 +38,7 @@ body{display: flex; flex-direction: column;}
 
 .st_tit,
 .sbox_tit{display: flex; justify-content: space-between; align-items: center;}
+.sbox_tit{margin-bottom: 15px;}
 .main_con>.st_tit{margin-bottom: 15px;}
 
 .stt_tit {font-weight: 600; font-size: 18px;}
@@ -57,22 +58,17 @@ body{display: flex; flex-direction: column;}
 
 .sbox_cox_fg1{display: flex; gap: 10px; align-items: stretch;}
 .sbox_cox_fg1>div{flex-grow: 1; flex-basis: 0; padding: 0px 10px;box-sizing: border-box; font-weight: 600; font-size: 13px;}
-
-
+.sbox_cox_fg1>div:first-child{border-right: 1.5px dashed #DBE0E9;}
 .form-label { margin-bottom: 0.5rem; font-weight: 400; font-size: 12px;  background-color: #ffffff;  position: relative;  z-index: 9;  margin-left: 8px; padding: 0 4px; }
 .search_wrap{width: 190px; }
 .search{margin-top: -8px; width: 100%;}
-
 
 .search .search_inner { background-color: transparent;font-weight: 500;font-size: 13px;border: 1px solid #CED4DB;line-height: 1.5;border-radius: 0.5rem;min-height: auto;padding: 5px 7px;}
 
 .search .search_inner input {width: 100%; font-weight: 500;font-size: 13px;color: #24313D; outline: none;}
 .st_tit{font-weight: 600; font-size: 15px; position: relative;}
 .st_tit.ip_check::after{content: "*"; position: absolute; right: -8px; top: 0px; color:#EF4444 ;}
-.nomal_table tbody tr th{font-weight: 400;text-align: right;color: #1D1C23;font-size: 12px;padding: 0px 10px 0px 0px;}
-.nomal_table button,
-.st_btn button{background: rgba(191, 204, 245, 0.3);border: 1px solid #BFCCF5; border-radius: 2px; font-weight: 500; font-size: 12px;color: #1D1C23; text-align: center; margin-left: 8px;height: 27px; line-height: 27px; padding: 0px 10px;}
-.nomal_table button {width:100%;}
+.st_tit.Refresh::before{content: ""; position: absolute; right: -36px; top: 0px; color:#EF4444 ; width: 23px; height: 23px; background: url(/img/ic_Refresh.png)no-repeat center center;}
 
 .sb_title{display: flex; justify-content: space-between; align-items: center; height: 40px;}
 .sb_title .sb_l,
@@ -90,10 +86,12 @@ body{display: flex; flex-direction: column;}
 
 
 
+
 .nomal_table{ border-collapse: collapse; border-spacing: 0px 10px;  width: 100%; table-layout: fixed; }
 .nomal_table tr{margin-bottom: 5px;}
 .nomal_table tr,
 .nomal_table th{height: 27px;}
+.nomal_table tr th{font-weight: 400;text-align: right;color: #1D1C23;font-size: 12px;padding: 0px 10px 0px 0px;}
 .nomal_table tr td{border: 1px solid #C3CBD9; height: 27px; width: 100%;font-weight: 500; font-size: 12.5px; padding: 0 8px; position: relative;}
 .nomal_table tr td.essential{border: 1px solid #325BDA;}
 .nomal_table tr td.fc{border-radius: 2px 0px 0px 2px;}
@@ -108,6 +106,9 @@ body{display: flex; flex-direction: column;}
 .nomal_table .search_icon::after{content: ""; position: absolute; top: 6px; right: 5px; cursor: pointer; background: url(/img/icon-wrapper.png)no-repeat center center; width: 15px; height: 15px;}
 .nomal_table input::placeholder{color: #CFD5E1;font-weight: 400; font-size: 12.5px;}
 
+.nomal_table button,
+.st_btn button{background: rgba(191, 204, 245, 0.3);border: 1px solid #BFCCF5; border-radius: 2px; font-weight: 500; font-size: 12px;color: #1D1C23; text-align: center; margin-left: 8px;height: 27px; line-height: 27px; padding: 0px 10px;}
+.nomal_table button {width:100%;}
 
 /*서머리 부분*/
 .route_txt{padding: 12px 13px;}
