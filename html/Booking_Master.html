@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="/css/new_main.css">
+
+    <title>Booking Master</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu"></div>
+    </div>
+
+    <div class="wrap">
+        <div class="main_con">
+            <div class="mc_top">
+                <!--검색 조건 부분-->
+                <div class="st_tit" >
+                    <div class="stt_tit">Booking Master <span>ADM_M1006 <span class="Bookmark"></span></span></span></div>
+                    <div class="stt_stiit">
+                        <div class="stt_txt">Customer Service > Booking > <span>Booking Master <div class="copy_img"></div></span></div>
+
+                        <div class="l_line">|</div>
+
+                        <div class="link_box">
+                            <div class="csv"></div>
+                            <div class="xls"></div>
+                        </div>
+
+                        <div class="l_line">|</div>
+
+                        <div class="link_box">
+                            <div class="pdf"></div>
+                            <div class="png"></div>
+                            <div class="pl"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--검색 조건 부분-->
+
+                <div class="section_box flex"  >
+
+                    <div class="search_wrap" >
+                        <label class="form-label">BKG No.</label>
+                        <div class="search">
+                            <div class="search_inner">
+                                <input type="text" value="ALPUS2200112">
+                            </div>
+                            <div class="tooltip">
+                                <div class="tt_icn"></div>
+                                <div class="tt_con">Tool tip guide text Tool tip guide text Tool tip guide text Tool tip</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search_wrap">
+                        <label class="form-label input_wrap">B/L No.</label>
+                        <div class="search">
+                            <div class="search_inner">
+                                <input type="text" value="ALPUS2200112">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search_wrap">
+                        <label class="form-label input_wrap">P/O No.</label>
+                        <div class="search">
+                            <div class="search_inner">
+                                <input type="text" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search_btn">
+                        <button class="breset"></button>
+                        <button class="bsearch">seach</button>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="section_box">
+
+                <div class="sb_title">
+                    <div class="sb_l">
+                        <div>Booking Office : <span>SELHO</span></div>
+                        <div class="l_line">|</div>
+                        <div>Staff : <span>OPUSADM</span></div>
+                        <div>
+                            <input type="checkbox" id="toggle" hidden class="toggle">
+                            <label for="toggle" class="toggleSwitch">
+                                <span class="toggleButton"></span>
+                            </label>
+                            <span class="sbt_b">Pre-Assigned BKG No.</span>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="toggle2" hidden class="toggle">
+                            <label for="toggle2" class="toggleSwitch">
+                                <span class="toggleButton"></span>
+                            </label>
+                            <span class="sbt_b">S/I</span>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="toggle3" hidden class="toggle">
+                            <label for="toggle3" class="toggleSwitch">
+                                <span class="toggleButton"></span>
+                            </label>
+                            <span class="sbt_b">Auto EDI Hold</span>
+                        </div>
+                    </div>
+
+                    <div class="sb_r">
+                        <div>Split : <span>No</span></div>
+                        <div class="l_line">|</div>
+                        <div>DPC : <span>Yes</span></div>
+                        <div class="l_line">|</div>
+                        <div>Status : <span class="Status_img"></span></div>
+                        <div class="sbr_box">SP <span class="Close"></span></div>
+                        <div class="sbr_box">SP <span class="Close"></span></div>
+                    </div>
+                </div>
+                
+                <!---->
+                <div class="sbox_wrap" >
+                    <div class="sbox_tit">
+                        <div class="st_tit ip_check">Route Info.</div>
+                        <div class="st_btn">
+                            <button>Constraint</button>
+                            <button>View Milestone</button>
+                            <button>Route Detail</button>
+                        </div>
+                    </div>
+                
+                    <div class="sbox_cox_fg1 brdl">
+                
+                        <div>
+                            <table class="normal_t">
+                                <col width="90px"/>
+                                <tr>
+                                    <th>POR</th>
+                                    <td>
+                                        <div class="wrapper-input sci">
+                                            <input type="text" value="KRPUS" ><div class="search_ic"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="wrapper-input sci">
+                                            <input type="text" value="KRPUSHN" disabled><div class="search_ic"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>POL</th>
+                                    <td>
+                                        <div class="wrapper-input sci">
+                                            <input type="text" value="KRPUS"><div class="search_ic"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="wrapper-input sci">
+                                            <input type="text" value="KRPUSHN" disabled><div class="search_ic"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>POD</th>
+                                    <td>
+                                        <div class="wrapper-input sci">
+                                            <input type="text" value="DEHAM"><div class="search_ic"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="wrapper-input sci">
+                                            <input type="text" value="DEHAMY1" disabled><div class="search_ic"></div>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>DEL</th>
+                                    <td>
+                                        <div class="wrapper-input sci">
+                                            <input type="text" value="DEHAM"><div class="search_ic"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="wrapper-input sci">
+                                            <input type="text" value="DEHAMY1" disabled><div class="search_ic"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                              
+                            </table>
+                        </div>
+                
+                        <div>
+                            <table class="normal_t">
+                                <col width="90px" />
+                                <tr>
+                                    <th>Trunk Vessel</th>
+                                    <td class="Es">
+                                        <div class="wrapper-input">
+                                            <input type="text" value="DEHAMY1">
+                                            <div class="search_ic"></div>
+                                        </div>
+                                    </td>
+                                    <td class="w65">EUROPE</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Sail Date</th>
+                                    <td class="Es" colspan="2">
+                                        <div class="wrapper-input">
+                                            <input type="text" value="DEHAMY1" disabled>
+                                            <div class="date_ic"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>R/D Term</th>
+                                    <td class="Es" colspan="2">
+                                        <div class="wrapper-input">
+                                            <select>
+                                                <option>Consol</option>
+                                                <option>Consol</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>Delivery</th>
+                                    <td colspan="2">
+                                        <div class="wrapper-input sci">
+                                            <input type="text" value="DEHAMY1" disabled>
+                                            <div class="date_ic"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                            </table>
+                        </div>
+                
+                        <div>
+                            <table class="normal_t">
+                                <col width="90px" />
+                                <tr>
+                                    <th>MTY Pick-up CY</th>
+                                    <td >
+                                        <div class="wrapper-input sci">
+                                            <input type="text" value="CNSHAHJ">
+                                            <div class="search_ic"></div>
+                                        </div>
+                                    </td>
+                                  
+                                </tr>
+                            
+                                <tr>
+                                    <th>MTY Pick-up Date</th>
+                                    <td >
+                                        <div class="wrapper-input sci">
+                                            <input type="text" value="2022-12-30" disabled>
+                                            <div class="date_ic"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <th>MTY Door Arrival</th>
+                                    <td >
+                                        <div class="wrapper-input">
+                                            <input type="text" value="" placeholder="YYYY-MM-DD" disabled>
+                                            <div class="date_ic"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <th>Full Return CY</th>
+                                    <td >
+                                        <div class="wrapper-input sci">
+                                            <input type="text" value="CNSHAGQ" >
+                                            <div class="search_ic"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                            </table>
+                        </div>
+                
+                        <div>
+                            <table class="normal_t">
+                                <col width="90px" />
+                
+                                <tr>
+                                    <th>SO No.</th>
+                                    <td colspan="2">
+                                        <div class="wrapper-input">
+                                            <input type="text" value="" placeholder="Placeholder" disabled>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>Available Slot</th>
+                                    <td >
+                                        <div class="wrapper-input">
+                                            <input type="text" value="-3 TEU (BKG: 3/ Alloc: 0)" disabled>
+                                        </div>
+                                    </td>
+                                    <td class="nb tr w80">
+                                        <button class="gf_st_btn">Alloc <div class="new_win"></div></button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>Pre Vessel</th>
+                                    <td colspan="2">
+                                        <div class="wrapper-input">
+                                            <input type="text" value="" placeholder="Placeholder" disabled>
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <th>Post Vessel</th>
+                                    <td colspan="2">
+                                        <div class="wrapper-input">
+                                            <input type="text" value="" placeholder="Placeholder" disabled>
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                            </table>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <!--Contract Info-->
+                <div class="sbox_wrap" >
+                    <div class="sbox_tit">
+                        <div class="st_tit ip_check">Contract Info..</div>
+                    </div>
+
+                    <div class="sbox_cox_fg1">
+                        <div>
+                            <table class="normal_t">
+                                <colgroup>
+                                    <col width="90px">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>Trunk Vessel</th>
+                                        <td>
+                                            <div class="wrapper-input sci">
+                                                <input type="text" value="TESTCLA0001">
+                                                <div class="search_ic"></div>
+                                            </div>
+                                        </td>
+                                        <td colspan="3">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="" disabled>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <th>Sail Date</th>
+                                        <td>
+                                            <div class="wrapper-input sci">
+                                                <input type="text" value="KR000007">
+                                                <div class="search_ic"></div>
+                                            </div>
+                                        </td>
+                                        <td class="" colspan="3">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="FIRST EXPRESS INTERNATIONAL DBA FEI LINE" disabled>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Sail Date</th>
+                                        <td>
+                                            <div class="wrapper-input sci">
+                                                <input type="text" value="KR000007">
+                                                <div class="search_ic"></div>
+                                            </div>
+                                        </td>
+                                        <td class="" colspan="3">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="HONGSUNG TRADING COMPANY" disabled>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <th>R/D Term</th>
+                                        <td class="w130">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="KR000007">
+                                                <div class="search_ic"></div>
+                                            </div>
+                                        </td>
+                                        <td class="w70">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="SELSC" disabled>
+                                            </div>
+                                        </td>
+                                        <td  colspan="2">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="HONGSUNG TRADING COMPANY" disabled>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <th>Delivery</th>
+                                        <td class="w130">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="KR000007">
+                                                <div class="search_ic"></div>
+                                            </div>
+                                        </td>
+                                        <td class="w170">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="FR.MEYER'S SOHN HAMBURG / DEPT. SCANDINAVI" disabled>
+                                            </div>
+                                        </td>
+                                        <td >
+                                            <div class="wrapper-input">
+                                                <input type="text" value="Non-BCO" disabled>
+                                            </div>
+                                        </td>
+                                        <td class="nb w50">
+                                            <label>
+                                                <input type="checkbox"> SOC Empty
+                                            </label>
+                                        </td>
+
+                                    </tr>
+                            
+                                </tbody>
+                            </table>
+                        </div>
+
+                        
+                        <div>
+                            <table class="normal_t">
+                                <colgroup>
+                                    <col width="90px">
+                                </colgroup>
+                                <tbody>
+
+                                    <tr>
+                                        <th>Load Office</th>
+                                        <td class="w130">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="SELSC" disabled>
+                                            </div>
+                                        </td>
+                                        <td class="w70">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="KR017" disabled>
+                                            </div>
+                                        </td>
+                                        <td colspan="4">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="HSKIM01" disabled>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Named Customer</th>
+                                        <td class="w130">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="" placeholder="placeholder" disabled>
+                                                <div class="search_ic"></div>
+                                            </div>
+                                        </td>
+                                        <td class="w70" colspan="5">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="SELSC" disabled>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th>Cus. Ref.#</th>
+                                        <td class="w130">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="KR000007" disabled>
+                                            </div>
+                                        </td>
+
+                                        <th>H/BL Filer</th>
+                                        <td>
+                                            <div class="wrapper-input tit">
+                                                <span>US</span> <!--bl 클래스 추가하면 반대야~ 슬기야-->
+                                                <div class="wrapper-input">
+                                                    <select>
+                                                        <option>Consol</option>
+                                                        <option>Consol</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="wrapper-input tit">
+                                                <span class="">CA</span>
+                                                <div class="wrapper-input">
+                                                    <select>
+                                                        <option>Consol</option>
+                                                        <option>Consol</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <th>Self Filer SCAC</th>
+                                        <td>
+                                            <div class="wrapper-input">
+                                                <input type="text" value="" placeholder="placeholder" disabled>
+                                                <div class="search_ic"></div>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th>BKG Contact</th>
+                                        <td class="w130">
+                                            <div class="wrapper-input">
+                                                <input type="text" value="SELSC">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrapper-input">
+                                                <input type="text" value="KR017">
+                                            </div>
+                                        </td>
+                                        <td >
+                                            <div class="wrapper-input">
+                                                <input type="text" value="HSKIM01">
+                                            </div>
+                                        </td>
+                                        <td colspan="3">
+                                            <div class="wrapper-input">
+                                                <select>
+                                                    <option>Consol</option>
+                                                    <option>Consol</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>S/I Contact</th>
+                                        <td class="w130">
+                                            <div class="wrapper-input">
+                                                <input type="text" placeholder="SELSC">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrapper-input">
+                                                <input type="text" placeholder="KR017">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrapper-input">
+                                                <input type="text" placeholder="HSKIM01">
+                                            </div>
+                                        </td>
+                                        <td colspan="3">
+                                            <div class="wrapper-input">
+                                                <select>
+                                                    <option>Mobile</option>
+                                                    <option>Consol</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!---->
+                <div class="sbox_wrap"  >
+                
+                    <div class="sbox_cox_fg1">
+
+                        <div>
+                            <div class="sbox_tit">
+                                <div class="st_tit_wrap"> 
+                                    <div class="st_tit ip_check">Container Info.</div>
+                                    <div class="sb_title">
+                                        <div class="sbr_box">D2 x 1</div>
+                                        <div class="sbr_box">D5 x 1</div>
+                                    </div>
+                                </div>
+                                <div class="st_btn">
+                                    <button>Rate Qty Detail</button>
+                                </div>
+                            </div>
+        
+                            <div class="f_bw">
+                                <div class="f_g10">
+                                    <label>
+                                        <input type="checkbox">
+                                        Flex Height
+                                    </label>
+                                     
+                                    <label>
+                                        <input type="checkbox">
+                                        LCL
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox">
+                                        SOC Partner
+                                    </label>
+
+                                    <div class="basic_search">
+                                        <select>
+                                            <option></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="f_g10">
+                                    
+                                    <div class="basic_search_wrap">
+                                        Est. Total Cargo Weight
+                                        <div class="basic_search">
+                                            <div class="input_wrap">
+                                                <input class="input_st" type="text" value="14,784.220">
+                                            </div>
+
+                                            <select class="w70 mg_l1">
+                                                <option>KGS</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="sbox_tit">
+                                <div class="st_tit ip_check">Additional Information</div>
+                                 <div class="st_btn">
+                                    <button>Send Email/Fax/EDI</button>
+                                    <button>Copy Booking</button>
+                                    <button>Booking Split</button >
+                                </div>
+                            </div>
+                            <div>
+                                <div class="add_info">
+                                    <div class="al_tit">
+                                        <div class="pl_mi"></div>
+                                        <div class="al_name on">Special Cargo</div>
+                                    </div>
+
+                                    <div class="alc_wrap">
+                                        <div class="al_con">
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">SOC Empty
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Reefer
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+                                            
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Awkward 
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+                                            
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Reefer
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Break Bulk
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Hanger
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="add_info">
+                                    <div class="al_tit">
+                                        <div class="pl_mi"></div>
+                                        <div class="al_name">Special Instruction</div>
+                                    </div>
+
+                                    <div class="alc_wrap">
+                                        <div class="al_con">
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Precaution
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Hide
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Premium
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Food Grade
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="al_op">
+                                            Rail Bulk
+                                            <div class="basic_search">
+                                                <select>
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+
+                                            Destination OCP
+                                            <div class="basic_search">
+                                            <div class="input_wrap">
+                                                <input class="input_st"type="text">
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="add_info">
+                                    <div class="al_tit">
+                                        <div class="pl_mi"></div>
+                                        <div class="al_name">Service Information</div>
+                                    </div>
+                                    <div class="alc_wrap">
+                                        <div class="al_con">
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Precaution
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+                                        
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Hide
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+                                        
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Premium
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+                                        
+                                            <div class="al_list">
+                                                <label>
+                                                    <input type="checkbox" class="cnw">Food Grade
+                                                </label>
+                                                <div class="new_win"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="add_info">
+                                    <div class="al_tit">
+                                        <div class="pl_mi"></div>
+                                        <div class="al_name">
+                                            Remark
+                                            <div class="st_btn">
+                                                <button>Transportation Remark</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="alc_wrap">
+                                        <div class="al_con">
+                                        
+                                            <table class="basic_t">
+                                                <colgroup>
+                                                    <col width="120px">
+                                                    <col width="auto">
+                                                    <col width="35px">
+                                                </colgroup>
+                                        
+                                                <th>Remark Type</th>
+                                                <th colspan="2">Remark Contents</th>
+                                        
+                                                <tr>
+                                                    <td>Customer</td>
+                                                    <td></td>
+                                                    <td class="search_tic"></td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                    <td>Vendor</td>
+                                                    <td></td>
+                                                    <td class="search_tic"></td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                    <td>Internal</td>
+                                                    <td></td>
+                                                    <td class="search_tic"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div style="height:1px"></div>
+        </div>
+
+
+
+
+        <!--써머리 부분-->
+        <div class="summary">
+            <div class="summary_position">
+                <div>
+                    <div class="sm_tit">BKG Summary  <span class="arr"></span></div>
+                    <div class="sm_list">
+                        <div class="route_txt">
+
+                            <div class="rt_box">
+                                <div class="rt_tit ud">Route >></div>
+                                <div class="rt_con">
+                                    <div class="rtc_route">
+                                        <div class="rtcr_p1">POR<span>KRPUS</span></div>
+                                        <div class="line">|</div>
+                                        <div class="rtcr_p1 r">POL<span>KRPUS</span></div>
+                                    </div>
+
+                                    <div class="rtc_txt">
+                                        <div class="ld_img"></div>
+                                        <div><span class="ship"></span> HJEU1004W</div>
+                                        <div class="ld_img"></div>
+                                    </div>
+
+                                    <div class="rtc_route">
+                                        <div class="rtcr_p1">POR<span>KRPUS</span></div>
+                                        <div class="line">|</div>
+                                        <div class="rtcr_p1 r">POL<span>KRPUS</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="rt_tit">Service Term</div>
+                                <div class="rt_con">CY / CY</div>
+                            </div>
+
+                            <div class="rt_box">
+                                <div class="rt_tit">Cargo Type</div>
+                                <div class="rt_con">Full</div>
+
+                                <div class="rt_tit">Special Cargo</div>
+                                <div class="rt_con">DG, RF</div>
+
+                                <div class="rt_tit">Commodity</div>
+                                <div class="rt_con">FAK OR CARGO, NOS</div>
+                            </div>
+
+                            <div class="rt_box">
+                                <div class="rt_tit">BKG Process</div>
+                                <div class="rt_con"></div>
+
+                                <div class="rt_tit ud">B/L Quantity >></div>
+
+                                <div class="rt_tit">DPC Status</div>
+                                <div class="rt_con">Yes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="on">
+                    <div class="sm_tit">Related Work <span class="arr"></span></div>
+                    <div class="sm_list">
+                        <div class="route_wrap">
+                        
+                            <ul class="route_list">
+                                <!-- 시간흐름 역순 -->
+                        
+                                <li>
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>Master</p>
+                                    </div>
+                                </li>
+                        
+                                <li class="on">
+                                    <!-- 활성화 class추가 : on -->
+                                    <!-- 구분점 class : red / orange / blue -->
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>Door Move</p>
+                                    </div>
+                        
+                                </li>
+                        
+                                <li class="on">
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>Container</p>
+                                    </div>
+                                </li>
+                    
+                                <li class="">
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>Shipping Parties</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="now">
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>Mark & Goods</p>
+                                    </div>
+                                </li>
+
+                                <li class="">
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>C/M</p>
+                                    </div>
+                                </li>
+
+                                <li class="">
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>Freight</p>
+                                    </div>
+                                </li>
+
+                                <li class="">
+                                    <div class="date_inner"></div>
+                                    <div class="txt_inner">
+                                        <p>B/L Issue</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div>
+            <button>Booking List</button>
+            <button>Issue C/N</button>
+            <button>Waiting Firm</button>
+        </div>
+
+        <div class="txt">Copyright © CyberLogitec All Rights Reserved.</div>
+        
+        <div>
+            <button class="on">Save</button>
+            <button>Cancel</button> 
+        </div>
+    </div>
+
+    <script src="/js/main.js"> </script>
+</body>
+
+</html>

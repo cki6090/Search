@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
 
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/new_main.css" />
@@ -28,57 +25,60 @@
 
     <div class="wrap">
       <div class="main_con">
-        <div class="st_tit">
-          <div class="stt_tit">Shipping Parties <span>ADM_M1006</span></div>
-          <div class="stt_stiit">
-            <div class="stt_txt">
-              Customer Service &nbsp;>&nbsp; SI Input for BL &nbsp;>
-              <span>Shipping Party <img src="/img/copy.png" /></span>
+        
+        <div class="mc_top">
+          <!--검색 조건 부분-->
+          <div class="st_tit">
+            <div class="stt_tit">Booking Master <span>ADM_M1006 <span class="Bookmark"></span></span></span></div>
+            <div class="stt_stiit">
+              <div class="stt_txt">Customer Service > Booking > <span>Booking Master <div class="copy_img"> </div></span></div>
+
+              <div class="l_line">|</div>
+          
+              <div class="link_box">
+                <div class="csv"></div>
+                <div class="xls"></div>
+              </div>
+          
+              <div class="l_line">|</div>
+          
+              <div class="link_box">
+                <div class="pdf"></div>
+                <div class="png"></div>
+                <div class="pl"></div>
+              </div>
+            </div>
+          </div>
+          <!--검색 조건 부분-->
+
+          <div class="section_box flex">
+            <div class="search_wrap">
+              <label class="form-label">BKG No.</label>
+              <div class="search">
+                <div class="search_inner">
+                  <input type="text" value="ALPUS2200112" />
+                </div>
+              </div>
             </div>
 
-            <div class="l_line">|</div>
-
-            <div class="link_box">
-              <div><img src="/img/h_img1.png" /></div>
-              <div><img src="/img/h_img2.png" /></div>
+            <div class="search_wrap">
+              <label class="form-label">B/L No.</label>
+              <div class="search">
+                <div class="search_inner">
+                  <input type="text" value="ALPUS2200112" />
+                </div>
+              </div>
             </div>
 
-            <div class="l_line">|</div>
-
-            <div class="link_box">
-              <div><img src="/img/h_img3.png" /></div>
-              <div><img src="/img/h_img4.png" /></div>
-              <div><img src="/img/h_img5.png" /></div>
+            <div class="search_btn">
+              <button class="breset"></button>
+              <button class="bsearch">seach</button>
             </div>
           </div>
         </div>
 
-        <div class="section_box flex">
-          <div class="search_wrap">
-            <label class="form-label">BKG No.</label>
-            <div class="search">
-              <div class="search_inner">
-                <input type="text" value="ALPUS2200112" />
-              </div>
-            </div>
-          </div>
 
-          <div class="search_wrap">
-            <label class="form-label">B/L No.</label>
-            <div class="search">
-              <div class="search_inner">
-                <input type="text" value="ALPUS2200112" />
-              </div>
-            </div>
-          </div>
-
-          <div class="search_btn">
-            <button class="breset"><img src="/img/Boxicons.png" /></button>
-            <button class="bsearch">seach</button>
-          </div>
-        </div>
-
-        <div class="section_box top0">
+        <div class="section_box">
           <div class="sbox_wrap">
             <div class="sbox_cox_fg1">
               <div>
@@ -96,7 +96,7 @@
                         style="flex: 0 0 130px"
                       >
                         <input type="text" value="KRPUS" />
-                        <img src="/img/icon_search.png" />
+                        <div class="search_ic"></div>
                       </div>
                       <div class="wrapper-input">
                         <input
@@ -151,8 +151,8 @@ CUST_ADDR</textarea
                     </div>
                   </div>
                   <div class="printer-box">
-                    <img src="/img/icon_printer.png" />
-                    <img src="/img/icon_circlecheck.png" />
+                    <div class="icon_printer"></div>
+                    <div class="icon_circlecheck"></div>
                   </div>
                   <!-- City/State/Country/Zip Code -->
                   <div class="title-label header">City/State</div>
@@ -233,7 +233,7 @@ CUST_ADDR</textarea
                     <div class="multi-input"> 
                       <div class="wrapper-input first icon_sl" style="flex: 0 0 130px">
                         <input type="text" value="NO000407" />
-                        <img src="/img/icon_search.png" />
+                        <div class="search_ic"></div>
                       </div>
                       <div class="wrapper-input">
                         <input type="text" value="TESTCLA0001" />
@@ -255,7 +255,7 @@ CUST_ADDR</textarea
                     <div class="multi-input">
                       <div class="wrapper-input first icon_sl" style="flex: 0 0 130px">
                         <input type="text" value="KRPUS" class="is" />
-                        <img src="/img/icon_search.png" />
+                        <div class="search_ic"></div>
                       </div>
                       <div class="wrapper-input">
                         <input
@@ -285,8 +285,8 @@ Karolinenstraße 1, 20357
                     </div>
                   </div>
                   <div class="printer-box">
-                    <img src="/img/icon_printer.png" />
-                    <img src="/img/icon_circlecheck.png" />
+                    <div class="icon_printer"></div>
+                    <div class="icon_circlecheck"></div>
                   </div>
                   <!-- FMC No. -->
                   <div class="title-label header">FMC No.</div>
@@ -319,7 +319,7 @@ Karolinenstraße 1, 20357
                     <div class="multi-input">
                       <div class="wrapper-input first icon_sl icon_sl" style="flex: 0 0 130px">
                         <input type="text" value="NO000403" />
-                        <img src="/img/icon_search.png" />
+                        <div class="search_ic"></div>
                       </div>
                       <div class="wrapper-input">
                         <input
@@ -352,7 +352,7 @@ Karolinenstraße 1, 20357
                         style="flex: 0 0 130px"
                       >
                         <input type="text" value="NO000407" />
-                        <img src="/img/icon_search.png" />
+                        <div class="search_ic"></div>
                       </div>
                       <div class="wrapper-input">
                         <input
@@ -404,8 +404,8 @@ CUST_ADDR</textarea
                     </div>
                   </div>
                   <div class="printer-box">
-                    <img src="/img/icon_printer.png" />
-                    <img src="/img/icon_circlecheck.png" />
+                    <div class="icon_printer"></div>
+                    <div class="icon_circlecheck"></div>
                   </div>
                   <!-- City/State/Country/Zip Code -->
                   <div class="title-label header">City/State</div>
@@ -504,7 +504,7 @@ daniel.roh.tpv@one-line.com</textarea
                     <div class="multi-input">
                       <div class="wrapper-input first icon_sl" style="flex: 0 0 130px">
                         <input type="text" value="NO000403" />
-                        <img src="/img/icon_search.png" />
+                        <div class="search_ic"></div>
                       </div>
                       <div class="wrapper-input">
                         <input
@@ -561,8 +561,8 @@ Karolinenstraße 1, 20357</textarea
                     </div>
                   </div>
                   <div class="printer-box">
-                    <img src="/img/icon_printer.png" />
-                    <img src="/img/icon_circlecheck.png" />
+                    <div class="icon_printer"></div>
+                    <div class="icon_circlecheck"></div>
                   </div>
                   <!-- City/State/Country/Zip Code -->
                   <div class="title-label header">City/State</div>
@@ -644,7 +644,7 @@ daniel.roh.tpv@one-line.com</textarea
                     <div class="multi-input">
                       <div class="wrapper-input first icon_sl" style="flex: 0 0 130px">
                         <input type="text" value="KR000007" />
-                        <img src="/img/icon_search.png" />
+                        <div class="search_ic"></div>
                       </div>
                       <div class="wrapper-input">
                         <input
@@ -673,7 +673,7 @@ daniel.roh.tpv@one-line.com</textarea
                     <div class="multi-input">
                       <div class="wrapper-input first icon_sl" style="flex: 0 0 130px">
                         <input type="text" value="NO000403" />
-                        <img src="/img/icon_search.png" />
+                        <div class="search_ic"></div>
                       </div>
                       <div class="wrapper-input">
                         <input
@@ -703,8 +703,8 @@ Karolinenstraße 1, 20357</textarea
                     </div>
                   </div>
                   <div class="printer-box">
-                    <img src="/img/icon_printer.png" />
-                    <img src="/img/icon_circlecheck.png" />
+                    <div class="icon_printer"></div>
+                    <div class="icon_circlecheck"></div>
                   </div>
                   <!-- Fax/Email -->
                   <div class="title-label header">Fax</div>
@@ -746,8 +746,8 @@ daniel.roh.tpv@one-line.com</textarea
                     </div>
                   </div>
                   <div class="printer-box">
-                    <img src="/img/icon_printer.png" />
-                    <img src="/img/icon_circlecheck.png" />
+                    <div class="icon_printer"></div>
+                    <div class="icon_circlecheck"></div>
                   </div>
                   <!-- Forwarder Ref. No. -->
                   <div class="title-label header">Forwarder Ref. No.</div>
@@ -771,7 +771,7 @@ daniel.roh.tpv@one-line.com</textarea
                     <div class="multi-input">
                       <div class="wrapper-input first icon_sl" style="flex: 0 0 130px">
                         <input type="text" placeholder="Placeholder" />
-                        <img src="/img/icon_search.png" />
+                        <div class="search_ic"></div>
                       </div>
                       <div class="wrapper-input">
                         <input type="text" placeholder="Placeholder" />
@@ -803,7 +803,7 @@ daniel.roh.tpv@one-line.com</textarea
       <div class="summary">
         <div class="summary_position">
           <div>
-            <div class="sm_tit">BKG Summary <img src="/img/arr.png" /></div>
+            <div class="sm_tit">BKG Summary <span class="arr"></span></div>
             <div class="sm_list">
               <div class="route_txt">
                 <div class="rt_box">
@@ -816,11 +816,9 @@ daniel.roh.tpv@one-line.com</textarea
                     </div>
 
                     <div class="rtc_txt">
-                      <div><img src="/img/ld.png" /></div>
-                      <div>
-                        <img class="ship" src="/img/ship.svg" />HJEU1004W
-                      </div>
-                      <div><img src="/img/ld.png" /></div>
+                      <div class="ld_img"></div>
+                      <div><span class="ship"></span> HJEU1004W</div>
+                      <div class="ld_img"></div>
                     </div>
 
                     <div class="rtc_route">
@@ -859,7 +857,7 @@ daniel.roh.tpv@one-line.com</textarea
           </div>
 
           <div class="on">
-            <div class="sm_tit">Related Work <img src="/img/arr.png" /></div>
+            <div class="sm_tit">Related Work <span class="arr"></span></div>
             <div class="sm_list">
               <div class="route_wrap">
                 <ul class="route_list">
@@ -930,7 +928,20 @@ daniel.roh.tpv@one-line.com</textarea
       </div>
     </div>
 
-    <div class="footer"></div>
+    <div class="footer">
+      <div>
+        <button>Booking List</button>
+        <button>Issue C/N</button>
+        <button>Waiting Firm</button>
+      </div>
+    
+      <div class="txt">Copyright © CyberLogitec All Rights Reserved.</div>
+    
+      <div>
+        <button class="on">Save</button>
+        <button>Cancel</button>
+      </div>
+    </div>
 
     <script src="/js/main.js"></script>
     <script>

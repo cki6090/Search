@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="/css/new_main.css">
+
+    <title>Charge Handling by Booking</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu"></div>
+    </div>
+
+    <div class="wrap">
+        <div class="main_con">
+
+            <div class="mc_top">
+                <!--검색 조건 부분-->
+                <div class="st_tit">
+                    <div class="stt_tit">Charge Handling by Booking <span>ADM_M1006 <span class="Bookmark on"></span></span></span></div>
+                    <div class="stt_stiit">
+                        <div class="stt_txt">Logistics > Demurrage & Detention > Charge >
+                            <span>Charge Handling by Booking <div class="copy_img"></div></span></div>
+                
+                        <div class="l_line">|</div>
+                
+                        <div class="link_box">
+                            <div class="csv"></div>
+                            <div class="xls"></div>
+                        </div>
+                
+                        <div class="l_line">|</div>
+                
+                        <div class="link_box">
+                            <div class="pdf"></div>
+                            <div class="png"></div>
+                            <div class="pl"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--검색 조건 부분-->
+                <div class="section_box flex">
+
+                    <div class="search_wrap">
+                        <label class="form-label input_wrap">B/L No.</label>
+                        <div class="search">
+                            <div class="search_inner">
+                                <input type="text" value="ALPUS2200112">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search_wrap">
+                        <label class="form-label input_wrap">Tariff Type</label>
+                        <div class="search">
+                            <div class="search_inner">
+                                <select>
+                                    <option>OBDT</option>
+                                    <option>OBDT</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search_wrap">
+                        <label class="form-label input_wrap">Status</label>
+                        <div class="search">
+                            <div class="search_inner">
+                                <select>
+                                    <option>All</option>
+                                    <option>OBDT</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="search_btn">
+                        <button class="breset"></button>
+                        <button class="bsearch">seach</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_box">
+                <div>
+                    <table class="basic_t">
+                        <tbody>
+                            <tr>
+                                <th>Route</th>
+                                <td colspan="3">
+                                    CNSHA <span class="arr"></span>
+                                    CNSHA <span class="arr"></span>
+                                    CNSHA <span class="arr"></span>
+                                    CNSHA 
+                                </td>
+
+                                <th>Shipper</th>
+                                <td class="w400">CN000002 | DALIAN MACHINERY I/E CORP</td>
+
+                                <th>Contract No.</th>
+                                <td>-</td>
+
+                                <th>Named Customer</th>
+                                <td>-</td>
+                            </tr>
+
+                            <tr>
+                                <th>Pre Port</th>
+                                <td>KRPUS</td>
+
+                                <th>Post Port</th>
+                                <td>-</td>
+
+                                <th>Consignee</th>
+                                <td>-</td>
+
+                                <th>Commodity</th>
+                                <td colspan="3">900000 | OPTICAL, PHOTO/CINEMA EQUIPMENTS</td>
+                            </tr>
+
+                            <tr>
+                                <th>Vessel Voyage</th>
+                                <td>KSTE3007W</td>
+                            
+                                <th>R/D Term</th>
+                                <td>CY/CY</td>
+                            
+                                <th>Notify Party</th>
+                                <td></td>
+                            
+                                <th>Rep. Commodity</th>
+                                <td colspan="3">900000 | OPTICAL, PHOTO/CINEMA EQUIPMENTS</td>
+                            </tr>
+
+                            <tr>
+                                <th>Route</th>
+                                <td colspan="3">
+                                    Arr. 2022-09-21 
+                                    Ber. 2022-09-21 
+                                    Dep. 2022-09-22
+                                </td>
+                            
+                                <th>Service Provider</th>
+                                <td></td>
+                            
+                                <th>Sales Office</th>
+                                <td>DLCBA</td>
+                            
+                                <th>Release Office</th>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div>
+                    <div class="grid_tit">
+                        <div class="gt_l">
+                            <div class="gtl_tit">Result</div>
+                            <div class="gtl_con">
+                                <div>Container Qty <span>4</span></div>
+                                <div class="l_line">|</div>
+
+                                <div>Total Billable Amount <span>USD 162.00</span></div>
+                                <div class="l_line">|</div>
+
+                                <div>
+                                    Estimate Settlement Date 
+                                    <span>
+                                        <div class="wrapper-input gt">
+                                            <input type="text" value="" disabled placeholder="YYYY-MM-DD">
+                                            <div class="date_ic"></div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                                <div class="st_btn">
+                                    <button>Precalculate</button>
+                                    <button>Estimate Settlement</button>
+                                    <button>Create Balance</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gt_r">
+                            <div class="gtr_tit"></div>
+                            <div class="st_btn">
+                                <button>Export Excel</button>
+                                <button class="on">Recalculate Charge</button>
+                                <button>Trans. Office</button>
+                                <button class="ds">Delete</button>
+                                <button>Delete Cancel</button>
+                                <button>Movement History</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 100%; height:300px;border: 1px solid #C3CBD9;">
+                        그리드 들어갈 곳
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div>
+            <button>Booking List</button>
+            <button>Issue C/N</button>
+            <button>Waiting Firm</button>
+        </div>
+    
+        <div class="txt">Copyright © CyberLogitec All Rights Reserved.</div>
+    
+        <div>
+            <button class="on">Save</button>
+            <button>Cancel</button>
+        </div>
+    </div>
+
+    <script src="/js/main.js"> </script>
+</body>
+
+</html>

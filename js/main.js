@@ -1,3 +1,4 @@
+
 //북마크 on_off
 $('.Bookmark').click(function () {
     $(this).toggleClass("on");
@@ -28,14 +29,11 @@ $(document).ready(function () {
 });
 
 
-
 //슬라이드 토글
 $('.add_info .al_tit').click(function () {
     $(this).next(".alc_wrap").slideToggle(200);
     $(this).toggleClass("on");
 });
-
-
 
 
 //인풋
